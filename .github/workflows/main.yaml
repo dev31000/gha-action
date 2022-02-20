@@ -1,13 +1,12 @@
-name: Node.js CI
-
-on:
-  repository_dispatch:
-  schedule:
-    - cron: '5 12 * * 0'
-
-jobs:
-  build:
+jobs: 
+  build: 
     runs-on: ubuntu-latest
-
-  steps:
-    - run: echo "Hello"
+  steps: 
+    - 
+      run: "echo \"Hello\""
+name: "Node.js CI"
+true: 
+  repository_dispatch: ~
+  schedule: 
+    - 
+      cron: "5 12 * * 0"
