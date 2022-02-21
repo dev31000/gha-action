@@ -3,7 +3,7 @@ name: "Node.js feature CI"
 on:
   repository_dispatch:
     types:
-      - webhook
+      - webhook2
   schedule:
     - cron: '5 12 * * 0'
 
