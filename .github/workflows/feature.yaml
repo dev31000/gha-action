@@ -1,0 +1,15 @@
+name: "Node.js feature CI"
+
+on:
+  repository_dispatch:
+    types:
+      - webhook
+  schedule:
+    - cron: '5 12 * * 0'
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: echo "Hello World!"
